@@ -1,0 +1,66 @@
+body {
+    background-color: brown;
+    text-align: center;
+    font-weight: 500;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+#todoinput {
+    background-color:white;
+}
+
+.todoframe {
+    background-color: darkkhaki;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    margin: auto;
+    margin-top: 100px;
+    border: 5px solid black;
+    animation: shrinkList 1s ease-in forwards  ;
+}
+
+.list {   
+    background-color: rgb(233, 36, 36, 0.3);
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px
+}
+
+.todoframe:hover {
+    animation: enlargeList 1.5s ease-in forwards  ;
+}
+
+.todoframe.unhover {
+    
+}
+
+
+@keyframes enlargeList {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        background-color: blanchedalmond;
+    }
+    100% {
+        transform: scale(140%);
+        background-color: blanchedalmond;
+    }
+}
+
+@keyframes shrinkList {
+    0% {
+        transform: scale(140%);
+        background-color: blanchedalmond;
+    }
+    50% {
+        background-color: blanchedalmond;
+    }
+    100% {
+        transform: scale(100%);
+        
+    }
+}
+
